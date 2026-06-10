@@ -1,0 +1,43 @@
+Cmp-Mod V01 Created by PcbNew   date = 2026-06-10T18:23:13+0530
+
+BeginCmp
+TimeStamp = c50b8d3b-1695-4a1d-acdb-44f92cadc618
+Path = /1d974a21-8a0d-46db-8768-43e2571a63b1
+Reference = DS1;
+ValeurCmp = OLED_128X64_1.3_I2C;
+IdModule  = OLED_128X64_1.3_I2C:LCD_OLED_128X64_1.3_I2C;
+EndCmp
+
+BeginCmp
+TimeStamp = 540dfb4e-f497-4308-b794-14e02770777f
+Path = /a464f62b-da85-4fae-afd4-813b5c0ec9cd
+Reference = U1;
+ValeurCmp = HC-SR04;
+IdModule  = HC-SR04:XCVR_HC-SR04;
+EndCmp
+
+BeginCmp
+TimeStamp = befa7754-7bd4-4744-bc33-c0f674853bfa
+Path = /55c84657-37d2-4316-aff1-a984df187d01
+Reference = SW1;
+ValeurCmp = SW_Push;
+IdModule  = BUTT-2:SW_BUTT-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 1c157d9f-77f9-4e80-8904-e3f75e716a56
+Path = /f1c45caf-6797-4c0c-b7ce-4207077d1c18
+Reference = SENS-1;
+ValeurCmp = DHT11;
+IdModule  = DHT11:SENSOR-DHT11;
+EndCmp
+
+BeginCmp
+TimeStamp = 07ebf3fe-e1ff-4f9d-9262-86a0af3bc47c
+Path = /ea552ab2-17c0-4396-bee3-11253519d60e
+Reference = A1;
+ValeurCmp = Arduino_Nano_Every;
+IdModule  = Module:Arduino_Nano;
+EndCmp
+
+EndListe
