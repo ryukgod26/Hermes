@@ -8,8 +8,8 @@
 #define SCREEN_HEIGHT 64
 #define OLED_RESET -1
 #define OLED_ADDR 0x3c
-#define TRIG_PIN 9
-#define ECHO_PIN 10
+#define ECHO_PIN 9
+#define TRIG_PIN 10
 #define DHT_PIN A1
 #define BTN_PIN 3
 #define DHTTYPE DHT11
@@ -21,7 +21,7 @@ DHT dht(DHT_PIN,DHTTYPE);
 // Adafruit_VL53L0X sensor_config = Adafruit_VL53L0X();
 
 bool temp_state = 0; //State in which Screen Shows temperature data
-bool lastBtnnState = HIGH;
+bool lastBtnState = HIGH;
 bool currentBtnState = HIGH;
 
 void setup(){
@@ -30,7 +30,8 @@ void setup(){
   dht.begin();
 
   pinMode(BTN_PIN, INPUT_PULLUP);
-  pinMode(IR_PIN, INPUT);
+  pinMode(TRIG_PIN, OUTPUT);
+  pinMode(ECHO_PIN, INPUT);
 
   if(!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)){
     Serial.println("OLED Display Intialization failed.");
@@ -95,25 +96,29 @@ void loop() {
     }
 
   } else{
-    int irStatus = digitalRead(IR_PIN);
+    digitalWrite(TRIG_PIN, LOW);
+    delay(2);
 
-    display = 
-  }
+    digitalWrite(TRIG_PIN, HIGH);
+    delay(10);
+    digitalWrite(TRIG_PIN, LOW);
 
-  display.print("Object Distance: ");
+    long duration = pulseIn(ECHO_PIN, HIGH);
+    int dist = duration * 0.034 / 2;
 
-  display.setCursor(0, 24);
-
-  if (measure.RangeStatus != 4){
-    display.setTextSize(3);
-    display.print(measure.RangeMilliMeter);
-    display.setTextSize(1);
-    display.print(" mm");
-  } else{
+    display.println("OBJECT DISTANCE\n");
     display.setTextSize(2);
-    display.print("Out of range.");
+
+    if(dist <= 0|| dist > 400){
+      display.setTextSize(1);
+      display.println("OUT OF RANGE!!");
+    } else{
+      display.print(dist);
+      display.println(" cm");
+    }
   }
 
   display.display();
   delay(100);
+
 }
