@@ -1,15 +1,15 @@
 # Hermes
 This is simple hermes board Created by me. It uses a Arduino Nano, 0.96 OLED Display, Ultra Sonic Sensor, DHT11 Temeperature/Humidity and a simple button. This shows the Temperature Data on the Screen First and when the Switch is pressed the data on the OLED Display get switchwd and started showing the data from the Ultra Sonic Sensor If there is a object in the range it shows how far is the object from the Ultra Sonic Sensor and if there is no object in he range then it shows "OUT OF RANGE!!".
 
-# Required Hardware
+## Required Hardware
 
-Arduino Nano X 1
-Ultra Sonic Sensor X 1
-Temperature and Humidity Sensor X 1
-0.96 OLED Display X 1
-Simple Button X 1
+- Arduino Nano X 1
+- Ultra Sonic Sensor X 1
+- Temperature and Humidity Sensor X 1
+- 0.96 OLED Display X 1
+- Simple Button X 1
 
-# BOM (bill of Materials)
+## BOM (bill of Materials)
 
 | Name | Quantity | Total Cost (USD) | Link | Distributor |
 |------|----------|------------------|------|-------------|
