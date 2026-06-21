@@ -1,6 +1,6 @@
-Name, Quantity, Total Cost (USD),  Link,  Distributor
-Arduino Nano, 1,  $2.00, (https://robu.in/product/arduino-nano-board-r3-with-ch340-chip-wo-usb-cable-solderedarduino-nano-r3-wo-usb-cable-soldered/, Robu 
-OLED Display,  1,  $2.2, (https://robu.in/product/0-96-inch-ssd1306-white-oled-display-module/), Robu 
-Push Buttons,  10 (only 1 is needed), $0.2, https://robu.in/product/6x6x5-tactile-push-button-switch, Robu 
-DHT11 Temperature Sensor, 1, $0.5,  https://robu.in/product/dht11-digital-relative-humidity-temperature-sensor-module/, Robu 
-Ultra Sonic Sensor,  1, $1.23,  https://robu.in/product/3-3-5-5v-hc-sr04-ultrasonic-sensor-4pin/, Robu 
+Name,Quantity,Total Cost (USD), Link, Distributor
+Arduino Nano,1, $2.00,(https://robu.in/product/arduino-nano-board-r3-with-ch340-chip-wo-usb-cable-solderedarduino-nano-r3-wo-usb-cable-soldered/,Robu 
+OLED Display, 1, $2.2,(https://robu.in/product/0-96-inch-ssd1306-white-oled-display-module/),Robu 
+Push Buttons, 10 (only 1 is needed),$0.2,https://robu.in/product/6x6x5-tactile-push-button-switch,Robu 
+DHT11 Temperature Sensor,1,$0.5, https://robu.in/product/dht11-digital-relative-humidity-temperature-sensor-module/,Robu 
+Ultra Sonic Sensor, 1,$1.23, https://robu.in/product/3-3-5-5v-hc-sr04-ultrasonic-sensor-4pin/,Robu 
